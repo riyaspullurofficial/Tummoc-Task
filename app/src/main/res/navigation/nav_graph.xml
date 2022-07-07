@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeTravelFragment">
+
+    <fragment
+        android:id="@+id/homeTravelFragment"
+        android:name="com.riyas.tummoctask.view.HomeTravelFragment"
+        android:label="fragment_home_travel"
+        tools:layout="@layout/fragment_home_travel" >
+        <action
+            android:id="@+id/action_homeTravelFragment_to_travelMapFragment"
+            app:destination="@id/travelMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/travelMapFragment"
+        android:name="com.riyas.tummoctask.view.TravelMapFragment"
+        android:label="fragment_travel_map"
+        tools:layout="@layout/fragment_travel_map" />
+</navigation>
